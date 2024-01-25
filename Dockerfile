@@ -6,7 +6,7 @@ COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 80
+EXPOSE 8000
 
 RUN python marssite/manage.py collectstatic --noinput
 
